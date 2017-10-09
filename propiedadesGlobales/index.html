@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Propiedades</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <style>
+      .w3-pre {
+        font-family: 'Roboto', sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="w3-container w3-margin-top">
+      <div class="w3-row">
+        <!-- Ejemplo Infinity-->
+        <div class="w3-col m4 l3">
+          <div class="w3-card-4">
+            <header class="w3-container w3-blue">
+              <h1>Infinity</h1>
+            </header>
+            <div class="w3-container">
+              <p>Representación del infinito matemático.</p>
+              <pre class="w3-left-align w3-pre">
+                console.log(Infinity          ); /* Infinity */
+                alert(Infinity);
+                var muuGrande=Math.pow(10, 1000);
+                console.log(muuGrande); /* Infinity */
+                alert(1 / muuGrande      ); /* 0 */
+              </pre>
+            </div>
+            <footer class="w3-container w3-blue">
+              <h5><a href="#" onclick="lanzarInfinito()">Lanzar ejemplo</a></h5>
+            </footer>
+          </div>
+        </div>
+        <!-- FIN Ejemplo Infinity-->
+        <div class="w3-col m1 l1">
+          <br>
+        </div>
+        <!-- Ejemplo NaN-->
+        <div class="w3-col m4 l3">
+          <div class="w3-card-4">
+            <header class="w3-container w3-blue">
+              <h1>NaN</h1>
+            </header>
+            <div class="w3-container">
+              <p>Representación del resultado No es un número</p>
+              <pre class="w3-left-align w3-pre">
+                console.log(parseInt("blabla")); /* NaN */
+                alert(parseInt("blabla"));
+              </pre>
+            </div>
+            <footer class="w3-container w3-blue">
+              <h5><a href="#" onclick="lanzarNaN()">Lanzar ejemplo</a></h5>
+            </footer>
+          </div>
+        </div>
+        <!-- FIN Ejemplo NaN-->
+        <div class="w3-col m1 l1">
+          <br>
+        </div>
+        <!-- Ejemplo Undefined-->
+        <div class="w3-col m4 l3">
+          <div class="w3-card-4">
+            <header class="w3-container w3-blue">
+              <h1>undefined</h1>
+            </header>
+            <div class="w3-container">
+              <p>Representación el valor de tipo no definida</p>
+              <pre class="w3-left-align w3-pre">
+                console.log(typeof sinDefinir); /* undefined */
+                alert(typeof sinDefinir);
+              </pre>
+            </div>
+            <footer class="w3-container w3-blue">
+              <h5><a href="#" onclick="lanzarUndefined()">Lanzar ejemplo</a></h5>
+            </footer>
+          </div>
+        </div>
+        <!-- FIN Ejemplo null-->
+        <div class="w3-col m1 l1">
+          <br>
+        </div>
+      </div>
+      <div class="w3-row">
+        <!-- Ejemplo Undefined-->
+        <div class="w3-col m4 l3">
+          <div class="w3-card-4">
+            <header class="w3-container w3-blue">
+              <h1>null</h1>
+            </header>
+            <div class="w3-container">
+              <p>Representación la ausencia de cualquier valor u objeto</p>
+              <pre class="w3-left-align w3-pre">
+                var sinValor=null;
+                console.log(sinValor); /* undefined */
+                alert(sinValor);
+              </pre>
+            </div>
+            <footer class="w3-container w3-blue">
+              <h5><a href="#" onclick="lanzarNull()">Lanzar ejemplo</a></h5>
+            </footer>
+          </div>
+        </div>
+        <!-- FIN Ejemplo null-->
+      </div>
+    </div>
+    <!-- CODIGO JS-->
+    <script type="text/javascript" src="codigo.js"></script>
+  </body>
+</html>
