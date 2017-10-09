@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ejemplos con bucles e iteraciones</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <style>
+      .w3-pre {
+        font-family: 'Roboto', sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="w3-container w3-margin-top">
+      <div class="w3-row">
+        <!-- Ejemplo DO ... WHILE-->
+        <div class="w3-col m4 l3">
+          <div class="w3-card-4">
+            <header class="w3-container w3-blue">
+              <h1>Do While</h1>
+            </header>
+            <div class="w3-container">
+              <p>La sentencia do...while se repite hasta que una condición especificada se evalúa a false</p>
+              <pre class="w3-left-align w3-pre">
+                  do {
+                    i += 1;
+                    console.log(i);
+                  } while (i < 5);
+              </pre>
+            </div>
+            <footer class="w3-container w3-blue">
+              <h5><a href="#" onclick="lanzarEjemploDoWhile()">Lanzar ejemplo</a></h5>
+            </footer>
+          </div>
+        </div>
+        <!-- FIN Ejemplo DO ... WHILE-->
+        <div class="w3-col m1 l1">
+          <br>
+        </div>
+        <!-- Ejemplo WHILE-->
+        <div class="w3-col m4 l3">
+          <div class="w3-card-4">
+            <header class="w3-container w3-blue">
+              <h1>While</h1>
+            </header>
+            <div class="w3-container">
+              <p>Una sentencia while ejecuta sus sentencias mientras la condición sea evaluada como verdadera
+  </p>
+              <pre class="w3-left-align w3-pre">
+                var n = 0;
+                var x = 0;
+                while (n < 3) {
+                  n++;
+                  x += n;
+                  console.log("El valor de n es "+n);
+                  console.log("El valor de x es "+x);
+                }
+              </pre>
+            </div>
+            <footer class="w3-container w3-blue">
+              <h5><a href="#" onclick="lanzarEjemploWhile()">Lanzar ejemplo</a></h5>
+            </footer>
+          </div>
+        </div>
+        <!-- FIN Ejemplo WHILE-->
+        <div class="w3-col m1 l1">
+          <br>
+        </div>
+        <!-- Ejemplo FOR-->
+        <div class="w3-col m4 l3">
+          <div class="w3-card-4">
+            <header class="w3-container w3-blue">
+              <h1>For</h1>
+            </header>
+            <div class="w3-container">
+              <p>Un bucle for se repite hasta que la condición especificada se evalúa como false
+  </p>
+              <pre class="w3-left-align w3-pre">
+                for (var i = 0; i < 10; i++) {
+                  console.log("El valor de i es "+i);
+                }
+              </pre>
+            </div>
+            <footer class="w3-container w3-blue">
+              <h5><a href="#" onclick="lanzarEjemploFor()">Lanzar ejemplo</a></h5>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CODIGO JS-->
+    <script type="text/javascript" src="codigo.js"></script>
+  </body>
+</html>

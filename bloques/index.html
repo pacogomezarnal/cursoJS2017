@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ejemplos con bloques</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <style>
+      .w3-pre {
+        font-family: 'Roboto', sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="w3-container w3-margin-top">
+      <div class="w3-row">
+        <!-- Ejemplo CON BLOQUE-->
+        <div class="w3-col m4 l3">
+          <div class="w3-card-4">
+            <header class="w3-container w3-blue">
+              <h1>Bloque</h1>
+            </header>
+            <div class="w3-container">
+              <p>El siguiente bloque únicamente ejecuta las instrucciones</p>
+              <pre class="w3-left-align w3-pre">
+                var i=0;
+                {
+                  var n=2;
+                  n++;
+                  alert("Valor de la variable i "+i);
+                }
+              </pre>
+            </div>
+            <footer class="w3-container w3-blue">
+              <h5>Ejemplo lanzado</h5>
+            </footer>
+          </div>
+        </div>
+        <!-- FIN Ejemplo BLOQUE-->
+        <div class="w3-col m1 l1">
+          <br>
+        </div>
+        <!-- Ejemplo Ambito-->
+        <div class="w3-col m4 l3">
+          <div class="w3-card-4">
+            <header class="w3-container w3-blue">
+              <h1>Ambito</h1>
+            </header>
+            <div class="w3-container">
+              <p> Javascript no tiene ámbito a nivel bloque en versiones anteriores a ECMAScript 6. Las variables introducidas dentro de un bloque pertenecen a la función o script que lo contiene y el efecto de declararlas persiste más alla del bloque mismo. En otras palabras, los bloques no introducen un nuevo ámbito. Si bien los bloques "Standalone" son válidos no deberían ser utilizados en Javascript ya que no se comportan como los bloques de C o Java. Por ejemplo:</p>
+              <pre class="w3-left-align w3-pre">
+                var i=0;
+                {
+                  var n=2;
+                  n++;
+                  alert("Valor de la variable i "+i);
+                }
+                alert("Valor de la variable n "+n);
+              </pre>
+            </div>
+            <footer class="w3-container w3-blue">
+              <h5>Ejemplo lanzado</a></h5>
+            </footer>
+          </div>
+        </div>
+        <!-- FIN Ejemplo WHILE-->
+        <div class="w3-col m1 l1">
+          <br>
+        </div>
+      </div>
+    </div>
+    <!-- CODIGO JS-->
+    <script type="text/javascript" src="codigo.js"></script>
+  </body>
+</html>
