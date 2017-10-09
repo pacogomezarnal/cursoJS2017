@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Propiedades</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <style>
+      .w3-pre {
+        font-family: 'Roboto', sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="w3-container w3-margin-top">
+      <div class="w3-row">
+        <!-- Ejemplo eval-->
+        <div class="w3-col m4 l3">
+          <div class="w3-card-4">
+            <header class="w3-container w3-blue">
+              <h1>eval(string)</h1>
+            </header>
+            <div class="w3-container">
+              <p>Función que evalua una expresión representada por el string</p>
+              <pre class="w3-left-align w3-pre">
+                var suma=eval("2+3");
+                alert("La suma de 2 + 3 es "+suma);
+                var x=5;
+                var y=3;
+                alert("La multiplicación de "+x+" * "+y+" es "+eval("x*y"));
+              </pre>
+            </div>
+            <footer class="w3-container w3-blue">
+              <h5><a href="#" onclick="lanzarEval()">Lanzar ejemplo</a></h5>
+            </footer>
+          </div>
+        </div>
+        <!-- FIN Ejemplo eval-->
+        <div class="w3-col m1 l1">
+          <br>
+        </div>
+        <!-- Ejemplo isNaN-->
+        <div class="w3-col m4 l3">
+          <div class="w3-card-4">
+            <header class="w3-container w3-blue">
+              <h1>isNaN(value)</h1>
+            </header>
+            <div class="w3-container">
+              <p>Función que evalua si el valor es un número o no</p>
+              <pre class="w3-left-align w3-pre">
+                alert("Resultado de isNaN(a): "+isNaN("f"));
+              </pre>
+            </div>
+            <footer class="w3-container w3-blue">
+              <h5><a href="#" onclick="lanzarIsNaN()">Lanzar ejemplo</a></h5>
+            </footer>
+          </div>
+        </div>
+        <!-- FIN Ejemplo parse-->
+        <div class="w3-col m1 l1">
+          <br>
+        </div>
+        <!-- Ejemplo isNaN-->
+        <div class="w3-col m4 l3">
+          <div class="w3-card-4">
+            <header class="w3-container w3-blue">
+              <h1>parseInt,parseFloat</h1>
+            </header>
+            <div class="w3-container">
+              <p>Convierten un String a un valor numérico</p>
+              <pre class="w3-left-align w3-pre">
+                alert("La conversión de del caracter 2: "+parseInt("2");)
+                alert("La conversión de del caracter 0.62: "+parseInt("0.62");)
+              </pre>
+            </div>
+            <footer class="w3-container w3-blue">
+              <h5><a href="#" onclick="lanzarParse()">Lanzar ejemplo</a></h5>
+            </footer>
+          </div>
+        </div>
+        <!-- FIN Ejemplo parse-->
+        <div class="w3-col m1 l1">
+          <br>
+        </div>
+      </div>
+    </div>
+    <!-- CODIGO JS-->
+    <script type="text/javascript" src="codigo.js"></script>
+  </body>
+</html>
