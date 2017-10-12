@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Objeto Math</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <style>
+      .w3-pre {
+        font-family: 'Roboto', sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="w3-container w3-margin-top">
+      <div class="w3-row">
+        <!-- Ejemplo Propiedades-->
+        <div class="w3-col m4 l3">
+          <div class="w3-card-4">
+            <header class="w3-container w3-blue">
+              <h1>Propiedades</h1>
+            </header>
+            <div class="w3-container">
+              <p>Ejemplo de algunos métodos del objeto Math</p>
+              <pre class="w3-left-align w3-pre">
+                var radio=5; //radio de un círculo
+                var area=2*Math.PI*radio
+                alert("El area de un círculo de area 5 es: "+area);
+                //No se puede variar el valor, es una constante
+                Math.PI=3;
+                alert("El valor de PI es: "+Math.PI);
+              </pre>
+            </div>
+            <footer class="w3-container w3-blue">
+              <h5><a href="#" onclick="lanzarProp()">Lanzar ejemplo</a></h5>
+            </footer>
+          </div>
+        </div>
+        <!-- FIN Propiedades-->
+        <div class="w3-col m1 l1">
+          <br>
+        </div>
+        <!-- Ejemplo metodos-->
+        <div class="w3-col m4 l3">
+          <div class="w3-card-4">
+            <header class="w3-container w3-blue">
+              <h1>Métodos</h1>
+            </header>
+            <div class="w3-container">
+              <p>Ejemplo de algunas funciones del objeto Math</p>
+              <pre class="w3-left-align w3-pre">
+                alert("Resultado de isNaN(a): "+isNaN("f"));
+              </pre>
+            </div>
+            <footer class="w3-container w3-blue">
+              <h5><a href="#" onclick="lanzarMetodos()">Lanzar ejemplo</a></h5>
+            </footer>
+          </div>
+        </div>
+        <!-- FIN MEtodos-->
+      </div>
+    </div>
+    <!-- CODIGO JS-->
+    <script type="text/javascript" src="codigo.js"></script>
+  </body>
+</html>

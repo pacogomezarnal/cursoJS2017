@@ -5,3 +5,6 @@ var i=0;
   alert("Valor de la variable i "+i);
 }
 alert("Valor de la variable n "+n);
+bla = 2;
+var bla;
+// ...
