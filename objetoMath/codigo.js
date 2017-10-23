@@ -17,4 +17,5 @@
       alert("El valor del seno de 90º: "+Math.sin(Math.PI/2));
       alert("El valor del absoluto de -2: "+Math.abs(-2));
       alert("Random: "+Math.random());
+      alert("Letra a: "+String.fromCharCode(98));
     }

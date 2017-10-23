@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Objeto String</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <style>
+      .w3-pre {
+        font-family: 'Roboto', sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="w3-container w3-margin-top">
+      <div class="w3-row">
+        <!-- Ejemplo Creacion y length-->
+        <div class="w3-col m4 l3">
+          <div class="w3-card-4">
+            <header class="w3-container w3-blue">
+              <h1>Creacion</h1>
+            </header>
+            <div class="w3-container">
+              <p>Ejemplo del string/p>
+              <pre class="w3-left-align w3-pre">
+                var texto="Esta es una frase";
+                var parrafo="Este es un párrafo de\
+                múltiples líneas";
+                alert("La longitud de la variable texto es: "+texto.length);
+                alert("La longitud de la variable parrafo es: "+texto.length);
+              </pre>
+            </div>
+            <footer class="w3-container w3-blue">
+              <h5><a href="#" onclick="lanzarCreacion()">Lanzar ejemplo</a></h5>
+            </footer>
+          </div>
+        </div>
+        <!-- FIN Propiedades-->
+        <div class="w3-col m1 l1">
+          <br>
+        </div>
+        <!-- Ejemplo metodos-->
+        <div class="w3-col m4 l3">
+          <div class="w3-card-4">
+            <header class="w3-container w3-blue">
+              <h1>Algunos métodos</h1>
+            </header>
+            <div class="w3-container">
+              <p>Ejemplo de algunas funciones del objeto String</p>
+              <pre class="w3-left-align w3-pre">
+                var texto="  Esta Es Una Frase  ";
+                alert("La frase a analizar es: "+texto);
+                alert("La letra de la variable texto que ocupa la posicion 1 es: "+texto.charAt(1));
+                alert("Y su código UTF16 es: "+texto.charCodeAt(1));
+                alert("La frase convertida a minusculas es: "+texto.toLowerCase());
+                var textoMinuscula=texto.toLowerCase();
+                alert("La frase convertida a minusculas y eliminados los espacios: "+textoMinuscula.trim());
+              </pre>
+            </div>
+            <footer class="w3-container w3-blue">
+              <h5><a href="#" onclick="lanzarMetodos()">Lanzar ejemplo</a></h5>
+            </footer>
+          </div>
+        </div>
+        <!-- FIN MEtodos-->
+        <!-- Ejemplo metodos busqueda-->
+        <div class="w3-col m4 l3">
+          <div class="w3-card-4">
+            <header class="w3-container w3-blue">
+              <h1>Algunos métodos de vusqueda y reemplazo</h1>
+            </header>
+            <div class="w3-container">
+              <p>Ejemplo de algunas funciones del objeto String</p>
+              <pre class="w3-left-align w3-pre">
+                var texto="esta es una frase";
+                alert("La frase a analizar es: "+texto);
+                alert("La primera vez que se encuentra la palabra \"es\": "+texto.indexOf("es"));
+                alert("Reemplazamos la palabra una por cualquier: "+texto.replace("una","cualquier"));
+                alert("Devolvemos el string a partir de la posicion 4: "+texto.substr(4));
+              </pre>
+            </div>
+            <footer class="w3-container w3-blue">
+              <h5><a href="#" onclick="lanzarMetodosBusqueda()">Lanzar ejemplo</a></h5>
+            </footer>
+          </div>
+        </div>
+        <!-- FIN MEtodos busqueda-->
+      </div>
+    </div>
+    <!-- CODIGO JS-->
+    <script type="text/javascript" src="codigo.js"></script>
+  </body>
+</html>
