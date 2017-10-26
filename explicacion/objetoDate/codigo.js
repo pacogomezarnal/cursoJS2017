@@ -23,3 +23,18 @@ switch (fechaCumplePaco.getDay()) {
     console.log("Dia de la semana: ERROR");
     break;
 }
+fechaCumplePaco.setFullYear(2019);
+switch (fechaCumplePaco.getDay()) {
+  case 0:
+    console.log("Dia de la semana: Domingo");
+    break;
+  case 1:
+    console.log("Dia de la semana: Lunes");
+    break;
+  case 2:
+    console.log("Dia de la semana: Martes");
+    break;
+  default:
+    console.log("Dia de la semana: ERROR");
+    break;
+}
