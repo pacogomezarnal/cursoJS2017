@@ -25,4 +25,5 @@ function beneficio(compra,venta){
 //Usando los beneficios
 var compra=prompt("Cual ha sido el precio de compra");
 var venta=prompt("Cual ha( sido el precio de venta");
-ver beneficio = beneficio (compra,venta);
+var beneficio = beneficio (compra,venta);
+console.log(beneficio);
