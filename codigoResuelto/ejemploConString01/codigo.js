@@ -1,32 +1,24 @@
 /*
 Enunciado
+
 Solicitar una frase al usuario
-Mediante el uso de las funciones del objeto String, sacar por console.log la frase letra a letra
+Mediante el uso de las funciones del objeto String, sacar por console.log cuantas vocales tiene
 Ejemplo:
 
 frase de entrada="Paco usa JS";
 
-salida-->
-
-P
-
-a
-
-c
-
-o
-
-....
+salida--> 2 a, 0 e, 0 i, 1 o, 1 u
 */
 
 //Inicializar
-var frase="";
+var contA,contE,contI,contO,contU=0;
+var fraseUsuario="";
 
-frase=prompt("Frase que queremos transformar");
-if(frase.length>0){
-  for (var i = 0; i < frase.length; i++) {
-    console.log(frase.charAt(i));
-  }
+//Pedir al usuario una frase
+fraseUsuario=prompt("Introduce una frase","");
+
+if(fraseUsuario.length>0){
+
 }else{
-  alert("No se ha introducido ninguna frase");
+  console.log("No se ha introducido ninguna frase");
 }
